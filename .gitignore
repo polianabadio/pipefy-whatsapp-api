@@ -1,0 +1,13 @@
+# Ignorar arquivos específicos dentro das pastas rastreadas
+.wwebjs_auth/*
+.wwebjs_cache/*
+
+# Mas não ignore os ponteiros do Git LFS
+!.wwebjs_auth/**     # Exceção para rastrear o conteúdo com LFS
+!.wwebjs_cache/**    # Exceção para rastrear o conteúdo com LFS
+
+# Ignorar node_modules e outros arquivos que não precisam ser versionados
+node_modules/
+.env
+npm-debug.log
+.DS_Store
